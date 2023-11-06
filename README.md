@@ -1,13 +1,15 @@
 # GitHub Copilot in the CLI
 
-GitHub Copilot in the CLI is an extension for GitHub CLI which provides a chat-like interface in the terminal that allows you to ask questions about the command line. You can ask Copilot in the CLI to suggest a command for your use case, with `gh copilot suggest`, or to explain a command you're curious about, with `gh copilot explain`.
+GitHub Copilot in the CLI is an extension for [GitHub CLI](https://cli.github.com/) which provides a chat-like interface in the terminal that allows you to ask questions about the command line. You can ask Copilot in the CLI to suggest a command for your use case with `gh copilot suggest`, or to explain a command you're curious about with `gh copilot explain`.
 
-For more information including use cases, enabling, and limitations, see [GitHub Copilot in the CLI](https://docs.github.com/en/copilot/copilot/github-copilot-in-the-cli) section within GitHub Docs.
+For more information on use cases, enabling, and limitations, see "[GitHub Copilot in the CLI](https://docs.github.com/en/copilot/copilot/github-copilot-in-the-cli)".
+
+For more information on what data is collected, used, and shared, see "[Privacy Policies](https://docs.github.com/en/site-policy/privacy-policies/)".
 
 ## Quickstart
 
 > **Note**
-> To use and install GitHub Copilot in the CLI, you must have an active GitHub Copilot subscription and have [GitHub CLI](https://cli.github.com/) installed.
+> To use and install GitHub Copilot in the CLI, you must have an active [GitHub Copilot](https://github.com/features/copilot) subscription and have [GitHub CLI](https://cli.github.com/) installed.
 
 1. Authenticate with OAuth token
    ```shell
@@ -17,18 +19,18 @@ For more information including use cases, enabling, and limitations, see [GitHub
    ```shell
    gh extension install github/gh-copilot --force
    ```
-1. Generate suggestions
+1. Suggest a command
    ```shell
    gh copilot suggest "Install and configure git lfs"
    ```
-1. Explain commands
+1. Explain a command
    ```shell
    gh copilot explain 'git lfs migrate import --everything --include="*.gz,*.png,*.jar"'
    ```
 
 ## Usage
 
-```shell
+```
 $ gh copilot --help
 Your AI command line copilot.
 
@@ -47,17 +49,17 @@ Flags:
 Use "copilot [command] --help" for more information about a command.
 ```
 
-## Reporting
+## Metrics sent to GitHub
 
-GitHub Copilot in the CLI sends certain metrics to our analytics system, and we want you to understand what is being
+GitHub Copilot in the CLI sends certain metrics to our analytics system. We want you to understand what is being
 sent and why it's important to our ability to continue to improve the product and provide you with a better experience
 over time.
 
 ### Why do we need usage stats?
 
-Our team uses metrics to prioritize our work and evaluate whether we are successful in solving real users' problems after
+Our team uses metrics to prioritize our work and evaluate whether we are successful in solving real user problems after
 we've released something. For example, when we release a new version and see a spike in exceptions and response ratings,
-we want to understand if there is a regression or a platform nuance causing problems.
+we want to understand if there is a regression or a platform issue causing problems.
 
 The more people who opt in to send usage stats, the more information we have to base our decision-making on. And if you
 want us to take your use cases into consideration, we hope you'll opt in so we get a better idea of how you use the app
@@ -65,9 +67,9 @@ and whether or not it's meeting your needs. GitHub Copilot in the CLI will send 
 analytics system unless you've opted out. We are very sensitive to the privacy of our users and we never look at the data
 of specific individuals, but rather only examine aggregate data and trends to inform our product decisions.
 
-You can change your opt-in setting at any time in `gh copilot config`.
+You can change your opt-in setting at any time in `gh copilot config`:
 
-```shell
+```
 $ gh copilot config
 
 Welcome to GitHub Copilot CLI!
