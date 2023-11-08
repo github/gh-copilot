@@ -5,7 +5,7 @@ title: "[BUG]: "
 labels: bug, needs-triage
 ---
 Thanks for taking the time to fill out this out! :bow:
-By submitting this issue, you agree to follow our [Code of Conduct](CODE_OF_CONDUCT.md).
+By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/github/gh-copilot/blob/main/CODE_OF_CONDUCT.md).
 
 ### What happened?
 _What did you do? What happened? What did you expect to happen?_

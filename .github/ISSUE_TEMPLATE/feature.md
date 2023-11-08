@@ -5,7 +5,7 @@ title: "[FEAT]: "
 labels: enhancement, needs-triage
 ---
 Thanks for taking the time to fill out this out! :bow:
-By submitting this issue, you agree to follow our [Code of Conduct](CODE_OF_CONDUCT.md).
+By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/github/gh-copilot/blob/main/CODE_OF_CONDUCT.md).
 
 ### Describe the need
 _What problem are you trying to solve? What do you want to happen?_

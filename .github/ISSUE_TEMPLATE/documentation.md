@@ -5,7 +5,7 @@ title: "[DOCS]: "
 labels: documentation, needs-triage
 ---
 Thanks for taking the time to fill out this out! :bow:
-By submitting this issue, you agree to follow our [Code of Conduct](CODE_OF_CONDUCT.md).
+By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/github/gh-copilot/blob/main/CODE_OF_CONDUCT.md).
 
 ### Describe the need
 _What do you wish was different about our docs?_
