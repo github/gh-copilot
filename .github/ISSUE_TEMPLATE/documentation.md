@@ -4,7 +4,7 @@ about: Update or add documentation
 title: "[DOCS]: "
 labels: documentation, needs-triage
 ---
-Thanks for taking the time to fill out this out! :bow:<br />
+Thanks for taking the time to fill out this out! :bow:
 By submitting this issue, you agree to follow our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ### Describe the need
@@ -15,5 +15,5 @@ _Do these docs apply to a specific version?_
 _For example: `gh-copilot v0.5.2-beta`_
 
 ### Relevant terminal output
-_Please copy and paste any relevant terminal output._<br />
+_Please copy and paste any relevant terminal output._
 _Please check your output before submission to ensure sensitive information is redacted._
