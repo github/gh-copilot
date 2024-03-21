@@ -8,10 +8,10 @@ For more information on what data is collected, used, and shared, see "[Privacy 
 
 ## Quickstart
 
-> **Note**
+> [!NOTE]
 > To use and install GitHub Copilot in the CLI, you must have an active [GitHub Copilot](https://github.com/features/copilot) subscription and have [GitHub CLI](https://cli.github.com/) installed.
 
-1. Authenticate with OAuth token
+1. Authenticate with GitHub CLI OAuth app
    ```shell
    gh auth login --web -h github.com
    ```
@@ -30,14 +30,21 @@ For more information on what data is collected, used, and shared, see "[Privacy 
 
 ## Usage
 
-```
+```shell
 $ gh copilot --help
 Your AI command line copilot.
 
 Usage:
   copilot [command]
 
+Examples:
+
+$ gh copilot suggest "Install git"
+$ gh copilot explain "traceroute github.com"
+
+
 Available Commands:
+  alias       Generate shell-specific aliases for convenience
   config      Configure options
   explain     Explain a command
   suggest     Suggest a command
@@ -47,6 +54,66 @@ Flags:
   -v, --version   version for copilot
 
 Use "copilot [command] --help" for more information about a command.
+```
+
+## Set up optional helpers
+
+**Is `gh copilot suggest ...` too many keystrokes?  Do you want support for executing suggestions and keeping them in history?**
+
+[`v1.0.0`](https://github.com/github/gh-copilot/releases/tag/v1.0.0) introduces `gh copilot alias`, which generates shell configuration for `ghcs` and `ghce` aliases that wrap `gh copilot suggest` and `gh copilot explain`.  These aliases provide faster invocation and support executing suggested commands if applicable.  Executed suggestions are added to your shell history for reuse later.
+
+```shell
+$ ghcs print "Hello world"
+
+Welcome to GitHub Copilot in the CLI!
+version 1.0.0 (2024-03-21)
+
+I'm powered by AI, so surprises and mistakes are possible. Make sure to verify any generated code or suggestions, and share feedback so that we can learn and improve. For more information, see https://gh.io/gh-copilot-transparency
+
+Suggestion:
+
+  echo "Hello world"
+
+? Select an option
+> Execute command
+
+? Are you sure you want to execute the suggested command?
+> Yes
+
+Hello world
+```
+
+To setup these optional helpers, see below for setup instructions for supported shells:
+
+- [bash](#bash)
+- [powershell](#powershell)
+- [zsh](#zsh)
+
+For more information, run `gh copilot alias --help`.
+
+For changing the execute command confirmation behavior, run `gh copilot config` to change `Default value for confirming command execution`.
+
+### Bash
+
+```bash
+echo 'eval "$(gh copilot alias -- bash)"' >> ~/.bashrc
+```
+
+### PowerShell
+
+> [!NOTE]
+> PowerShell users might need to update the file containing `gh-copilot` helpers after updating the extension.
+
+```pwsh
+$GH_COPILOT_PROFILE = Join-Path -Path $(Split-Path -Path $PROFILE -Parent) -ChildPath "gh-copilot.ps1"
+gh copilot alias -- pwsh | Out-File ( New-Item -Path $GH_COPILOT_PROFILE -Force )
+echo ". $GH_COPILOT_PROFILE" >> $PROFILE
+```
+
+### Zsh
+
+```zsh
+echo 'eval "$(gh copilot alias -- zsh)"' >> ~/.zshrc
 ```
 
 ## Metrics sent to GitHub
