@@ -17,8 +17,12 @@ For more information on what data is collected, used, and shared, see "[Privacy 
    ```
 1. Install / upgrade extension
    ```shell
-   gh extension install github/gh-copilot --force
+   gh extension install github/gh-copilot
    ```
+1. Upgrade extension
+   ```shell
+   gh extension upgrade github/gh-copilot
+    ```
 1. Suggest a command
    ```shell
    gh copilot suggest "Install and configure git lfs"
