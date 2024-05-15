@@ -50,11 +50,16 @@ Available Commands:
   suggest     Suggest a command
 
 Flags:
-  -h, --help      help for copilot
-  -v, --version   version for copilot
+  -h, --help              help for copilot
+      --hostname string   The GitHub host to use for authentication
+  -v, --version           version for copilot
 
 Use "copilot [command] --help" for more information about a command.
 ```
+
+### Multi-account notes
+
+Multi-account users can use `--hostname` flag or `GH_HOST` environment variable to specify the GitHub hostname for commands that would otherwise assume the `github.com` host.
 
 ## Set up optional helpers
 
@@ -158,11 +163,12 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 {
 	"platform": "darwin",
 	"architecture": "arm64",
-	"version": "0.3.0-beta",
+	"version": "1.1.0",
 	"custom_event": "true",
 	"event_parent_command": "explain",
 	"event_name": "Explain",
 	"sha": "089a53215fc4383179869f7f6132ce9d6e58754a",
-	"thread_id": "e61d0d08-f6ba-465b-81cf-c30fd9127d70"
+	"thread_id": "e61d0d08-f6ba-465b-81cf-c30fd9127d70",
+	"host": "github.com"
 }
 ```
