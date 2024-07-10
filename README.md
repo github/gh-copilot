@@ -19,8 +19,12 @@ For help troubleshooting connectivity, see "[Troubleshooting network errors for 
    ```
 1. Install / upgrade extension
    ```shell
-   gh extension install github/gh-copilot --force
+   gh extension install github/gh-copilot
    ```
+1. Upgrade extension
+   ```shell
+   gh extension upgrade github/gh-copilot
+    ```
 1. Suggest a command
    ```shell
    gh copilot suggest "Install and configure git lfs"
