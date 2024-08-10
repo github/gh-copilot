@@ -95,6 +95,7 @@ To setup these optional helpers, see below for setup instructions for supported 
 - [bash](#bash)
 - [powershell](#powershell)
 - [zsh](#zsh)
+- [fish](#fish)
 
 For more information, run `gh copilot alias --help`.
 
@@ -121,6 +122,13 @@ echo ". `"$GH_COPILOT_PROFILE`"" >> $PROFILE
 
 ```zsh
 echo 'eval "$(gh copilot alias -- zsh)"' >> ~/.zshrc
+```
+
+
+### Fish
+```fish
+gh extension install devatdawn/gh-fish
+gh fish alias
 ```
 
 ## Metrics sent to GitHub
