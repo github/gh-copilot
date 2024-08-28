@@ -59,6 +59,17 @@ Flags:
 Use "copilot [command] --help" for more information about a command.
 ```
 
+## Using a proxy
+
+Set the following environment variables to use `gh-copilot` behind a proxy:
+
+```shell
+export HTTP_PROXY="<PROXY_HOST>:<PROXY_PORT>"
+export HTTPS_PROXY="<PROXY_HOST>:<PROXY_PORT>"
+export http_proxy="<PROXY_HOST>:<PROXY_PORT>"
+export https_proxy="<PROXY_HOST>:<PROXY_PORT>"
+```
+
 ### Multi-account notes
 
 Multi-account users can use `--hostname` flag or `GH_HOST` environment variable to specify the GitHub hostname for commands that would otherwise assume the `github.com` host.
