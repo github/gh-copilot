@@ -11,11 +11,13 @@ For help troubleshooting connectivity, see "[Troubleshooting network errors for 
 ## Quickstart
 
 > [!NOTE]
-> To use and install GitHub Copilot in the CLI, you must have an active [GitHub Copilot](https://github.com/features/copilot) subscription and have [GitHub CLI](https://cli.github.com/) installed.
+> To use and install GitHub Copilot in the CLI, you must have an active [GitHub Copilot](https://github.com/features/copilot) subscription, have [GitHub CLI](https://cli.github.com/) installed, and authenticate using the GitHub CLI OAuth app.
+>
+> Classic and fine-grained PATs are currently unsupported and might require clearing the `GITHUB_TOKEN` and `GH_TOKEN` environment variables.
 
 1. Authenticate with GitHub CLI OAuth app
    ```shell
-   gh auth login --web -h github.com
+   gh auth login --web
    ```
 1. Install / upgrade extension
    ```shell
