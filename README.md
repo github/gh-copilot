@@ -15,6 +15,11 @@ For help troubleshooting connectivity, see "[Troubleshooting network errors for 
 >
 > Classic and fine-grained PATs are currently unsupported and might require clearing the `GITHUB_TOKEN` and `GH_TOKEN` environment variables.
 
+> [!IMPORTANT]
+> GitHub Copilot in the CLI does not currently have plans to support 32-bit Android distributions.
+>
+> For more information, see https://github.com/github/gh-copilot/issues/122.
+
 1. Authenticate with GitHub CLI OAuth app
    ```shell
    gh auth login --web
