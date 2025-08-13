@@ -2,7 +2,9 @@
 
 GitHub Copilot in the CLI is an extension for [GitHub CLI](https://cli.github.com/) which provides a chat-like interface in the terminal that allows you to ask questions about the command line. You can ask Copilot in the CLI to suggest a command for your use case with `gh copilot suggest`, or to explain a command you're curious about with `gh copilot explain`.
 
-For use cases, enabling, and limitations, see "[GitHub Copilot in the CLI](https://docs.github.com/en/copilot/github-copilot-in-the-cli)".
+For enabling and using, see "[Using GitHub Copilot in the command line](https://docs.github.com/en/copilot/how-tos/use-copilot-for-common-tasks/use-copilot-in-the-cli)".
+
+For use cases and limitations, see "[Responsible use of GitHub Copilot in the CLI](https://docs.github.com/en/copilot/responsible-use/copilot-in-the-cli)".
 
 For what data is collected, used, and shared, see "[Privacy Policies](https://docs.github.com/en/site-policy/privacy-policies/)".
 
